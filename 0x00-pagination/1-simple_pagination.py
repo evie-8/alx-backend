@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+'''function to get info on a page'''
 import csv
 import math
 from typing import Tuple, List

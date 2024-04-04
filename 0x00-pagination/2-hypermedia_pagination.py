@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+'''get data on specific page'''
 import csv
 import math
 from typing import Tuple, List, Dict
@@ -41,7 +42,7 @@ class Server:
             return []
         return pageData[start:end]
 
-    def get_page(self, page: int = 1, page_size: int = 10) -> Dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """Gets Info about a page"""
         pageData = self.get_page(page, page_size)
         start, end = index_range(page, page_size)
