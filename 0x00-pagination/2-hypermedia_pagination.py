@@ -2,7 +2,7 @@
 '''get data on specific page'''
 import csv
 import math
-from typing import Tuple, List, Dict
+from typing import Tuple, List
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
@@ -42,7 +42,7 @@ class Server:
             return []
         return pageData[start:end]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """Gets Info about a page"""
         assert type(page) == int and type(page_size) == int
         assert (page > 0 and page_size > 0)
