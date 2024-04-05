@@ -45,8 +45,9 @@ class Server:
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         '''retrieves a info about a page
         '''
-        assert type(page) == int and page > 0
-        assert type(page_size) == int and page_size > 0
+        assert type(page) == int and type(page_size) == int
+        assert type(page > 0 and page_size > 0)
+
         page_data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
         page_info = {
