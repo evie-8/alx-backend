@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module for task 2
+Module for task 3
 """
 
 from flask_babel import Babel
@@ -24,8 +24,8 @@ app.config.from_object(Config)
 
 @app.route('/', methods=['GET'], strict_slashes=False)
 def helloWorld() -> str:
-    """task 2 route"""
-    return render_template('2-index.html')
+    """task 4 route"""
+    return render_template('4-index.html')
 
 
 @babel.localeselector
