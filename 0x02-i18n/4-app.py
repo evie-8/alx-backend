@@ -21,6 +21,7 @@ class Config(object):
 
 app.config.from_object(Config)
 
+
 @babel.localeselector
 def get_locale() -> str:
     """get locale"""
